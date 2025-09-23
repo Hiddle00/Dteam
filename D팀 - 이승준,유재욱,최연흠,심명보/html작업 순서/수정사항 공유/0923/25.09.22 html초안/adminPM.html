@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Untree.co">
+    <link rel="shortcut icon" href="favicon.png">
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="bootstrap, bootstrap4" />
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="css/tiny-slider.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>관리자페이지 - 매출조회 </title>
+    <style>
+      body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f5f5f5;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #3b5d50;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+      nav {
+        background-color: #444;
+        padding: 15px;
+      }
+      nav a {
+        color: white;
+        margin-right: 20px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      section {
+        padding: 30px;
+      }
+      h2 {
+        color: #333;
+      }
+      form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        margin-bottom: 30px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      }
+      input, select, button, textarea {
+        margin: 10px 0;
+        padding: 10px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: white;
+      }
+      table, th, td {
+        border: 1px solid #ccc;
+      }
+      th, td {
+        padding: 12px;
+        text-align: center;
+      }
+      .btn-danger {
+        background-color: #e74c3c;
+        color: white;
+        border: none;
+      }
+      .btn-edit {
+        background-color: #3498db;
+        color: white;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>관리자 페이지</h1>
+    </header>
+    <nav>
+      <a href="adminPM.html">상품 관리</a>
+      <a href="adminSales.html">매출 조회</a>
+    </nav>
+    <section id="product-add">
+      <h2>상품 등록</h2>
+      <form>
+        <input type="text" placeholder="상품명" required>
+        <input type="number" placeholder="가격" required>
+        <input type="text" placeholder="카테고리">
+        <textarea placeholder="상품설명"></textarea>
+        <input type="file" accept="image/*">
+        <button type="submit">등록하기</button>
+      </form>
+    </section>
+    <section id="product-edit">
+      <h2>상품 수정</h2>
+      <form>
+        <input type="text" placeholder="수정할 상품 ID" required>
+        <input type="text" placeholder="새 상품명">
+        <input type="number" placeholder="새 가격">
+        <input type="text" placeholder="새 카테고리">
+        <textarea placeholder="상품설명"></textarea>
+        <button class="btn-edit" type="submit">수정하기</button>
+      </form>
+    </section>
+
+    <section id="product-delete">
+      <h2>상품 삭제</h2>
+      <form>
+        <input type="text" placeholder="삭제할 상품 ID" required>
+        <button class="btn-danger" type="submit">삭제하기</button>
+      </form>
+    </section>
+  </body>
+</html>
