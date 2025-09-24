@@ -83,46 +83,128 @@
   </style>
 </head>
 <body>
+  		<!-- Start Header/Navigation -->
+		<nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
 
-  <header>
-    <h1>관리자 페이지</h1>
-  </header>
+			<div class="container">
+				<a class="navbar-brand" href="index.html">The Monday<span>.</span></a>
 
-  <nav>
-    <a href="adminPM.html">상품 관리</a>
-    <a href="adminSales.html">매출 조회</a>
-  </nav>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
 
-  <section id="product-add">
-    <h2>상품 등록</h2>
-    <form>
-      <input type="text" placeholder="상품명" required>
-      <input type="number" placeholder="가격" required>
-      <input type="text" placeholder="카테고리">
-      <textarea placeholder="상품설명"></textarea>
-      <input type="file" accept="image/*">
-      <button type="submit">등록하기</button>
-    </form>
-  </section>
+				<div class="collapse navbar-collapse" id="navbarsFurni">
+					<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+						<li><a class="nav-link" href="index.html">메인 홈</a></li>
+						<li><a class="nav-link" href="shop.html">상품 보기</a></li>
+						<li><a class="nav-link" href="about.html">팀소개</a></li>
+					</ul>
 
-  <section id="product-edit">
-    <h2>상품 수정</h2>
-    <form>
-      <input type="text" placeholder="수정할 상품 ID" required>
-      <input type="text" placeholder="새 상품명">
-      <input type="number" placeholder="새 가격">
-      <input type="text" placeholder="새 카테고리">
-      <textarea placeholder="상품설명"></textarea>
-      <button class="btn-edit" type="submit">수정하기</button>
-    </form>
-  </section>
+					<ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
+						<li><a class="nav-link" href="login.html"><img src="images/user.svg"></a></li>
+						<li><a class="nav-link" href="cart.html"><img src="images/cart.svg"></a></li>
+					</ul>
+				</div>
+			</div>
+				
+		</nav>
+		<!-- End Header/Navigation -->
 
-  <section id="product-delete">
-    <h2>상품 삭제</h2>
-    <form>
-      <input type="text" placeholder="삭제할 상품 ID" required>
-      <button class="btn-danger" type="submit">삭제하기</button>
-    </form>
-  </section>
+		<!-- Start Hero Section -->
+			<div class="hero">
+				<div class="container">
+					<div class="row justify-content-between">
+						<div class="col-lg-5">
+							<div class="intro-excerpt">
+								<h1>관리자 페이지</h1>
+							</div>
+						</div>
+						<div class="col-lg-7"></div>
+					</div>
+				</div>
+			</div>
+		<!-- End Hero Section -->
+
+    <!-- Start navtap Section -->
+    <div class="navtap">
+      <div class="navtap-background">
+        <div class="container">
+          <nav>
+            <a href="adminPM.html">상품 관리</a>
+            <a href="adminSales.html">매출 조회</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!-- End navtap Section -->
+
+    <section id="product-add">
+    <div class="untree_co-section">
+      <div class="container">
+        <div class="row">
+            <h2 class="h3 mb-3 text-black">상품 등록</h2>
+            <div class="p-3 p-lg-5 border bg-white">
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <label for="p_name" class="text-black">상품명 <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" id="p_name" name="p_name" required>
+                </div>
+                <div class="col-md-12">
+                  <label for="p_price" class="text-black">가격 <span class="text-danger">*</span></label>
+                  <input type="number" class="form-control" id="p_price" name="p_price" required>
+                </div>
+                <div class="col-md-12">
+                  <label for="p_kind" class="text-black">카테고리 <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" id="p_kind" name="p_kind">
+                </div>
+                <div class="col-md-12">
+                  <label for="p_detail" class="text-black">상품설명 <span class="text-danger">*</span></label>
+                  <textarea class="form-control" id="p_detail" name="p_detail"></textarea>
+                </div>
+                <div class="col-md-12">
+                  <label for="p_image" class="text-black">상품이미지 <span class="text-danger">*</span></label>
+                  <input type="file" class="form-control" id="p_image" name="p_image" accept="image/*">
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    </section>
+		<!-- Start product-add Section -->
+    <section id="product-add">
+      <h2>상품 등록</h2>
+      
+        
+        
+        <input type="file" accept="image/*">
+        <button type="submit">등록하기</button>
+      </form>
+    </section>
+    <!-- Start product-add Section -->
+
+    <!-- Start product-edit Section -->
+    <section id="product-edit">
+      <h2>상품 수정</h2>
+      <form>
+        <input type="text" placeholder="수정할 상품 ID" required>
+        <input type="text" placeholder="새 상품명">
+        <input type="number" placeholder="새 가격">
+        <input type="text" placeholder="새 카테고리">
+        <textarea placeholder="상품설명"></textarea>
+        <button class="btn-edit" type="submit">수정하기</button>
+      </form>
+    </section>
+    <!-- Start product-edit Section -->
+
+    <!-- Start product-delete Section -->
+    <section id="product-delete">
+      <h2>상품 삭제</h2>
+      <form>
+        <input type="text" placeholder="삭제할 상품 ID" required>
+        <button class="btn-danger" type="submit">삭제하기</button>
+      </form>
+    </section>
+    <!-- End product-delete Section -->
 </body>
 </html>
