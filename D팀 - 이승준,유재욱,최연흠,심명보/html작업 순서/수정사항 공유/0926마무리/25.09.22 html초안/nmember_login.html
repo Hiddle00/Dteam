@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="Untree.co">
+        <link rel="shortcut icon" href="favicon.png">
+
+        <meta name="description" content="" />
+        <meta name="keywords" content="bootstrap, bootstrap4" />
+
+        <!-- Bootstrap CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+        <link href="css/tiny-slider.css" rel="stylesheet"> 
+        <link href="css/style.css" rel="stylesheet">
+        <title>비회원 주문내역 조회</title>
+    </head>
+    <body>
+        <!-- Start Header/Navigation -->
+		<nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
+			<div class="container">
+				<a class="navbar-brand" href="index.html">The Monday<span>.</span></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarsFurni">
+					<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+						<li><a class="nav-link" href="index.html">메인 홈</a></li>
+						<li><a class="nav-link" href="shop.html">상품 보기</a></li>
+						<li><a class="nav-link" href="signup.html">회원가입</a></li>
+						<li><a class="nav-link" href="login.html">로그인</a></li>
+						<li><a class="nav-link" href="adminp_list.html">관리자페이지</a></li>
+						<li class="nav-item active"><a class="nav-link" href="nmember_login.html">비회원 구매내역조회</a></li>
+						<li><a class="nav-link" href="inquire.html">문의하기</a></li>
+						<li><a class="nav-link" href="board.html">문의게시판</a></li>
+					</ul>
+
+					<ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
+						<li><a class="nav-link" href="mypage.html"><img src="images/user.svg"></a></li>
+						<li><a class="nav-link" href="cart.html"><img src="images/cart.svg"></a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Start Hero Section -->
+		<div class="hero">
+			<div class="container">
+				<div class="row justify-content-between">
+					<div class="col-lg-8">
+						<div class="intro-excerpt">
+							<h1>비회원 페이지</h1>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+                    <div class="col-lg-7" style="color: #3b5d50;">.</div>
+                </div>
+			</div>
+		</div>
+		<!-- End Hero Section -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="c_email_address" class="text-black">이메일 주소 <span class="text-danger">*</span></label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="c_email_address" name="c_email_address" placeholder="example@DTeam.com">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="tel" class="text-black">전화번호 <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="tel" name="tel">
+                </div>
+                <div>
+                    <button type="button" class="btn btn-primary btn-sm" onclick="window.location = 'nmember_order.html'">구매내역 조회하기</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

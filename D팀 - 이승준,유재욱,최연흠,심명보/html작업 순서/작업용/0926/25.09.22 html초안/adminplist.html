@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Untree.co">
+    <link rel="shortcut icon" href="favicon.png">
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="bootstrap, bootstrap4" />
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="css/tiny-slider.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>관리자페이지 - 상품등록 </title>
+    <style>
+      header {
+        background-color: #3b5d50;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+      table 
+      {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Start Header/Navigation -->
+		<nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
+
+			<div class="container">
+				<a class="navbar-brand" href="index.html">The Monday<span>.</span></a>
+
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<!-- <div class="collapse navbar-collapse" id="navbarsFurni">
+					<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+						<li>
+							<a class="nav-link" href="index.html">메인 홈</a>
+						</li>
+						<li ><a class="nav-link" href="shop.html">상품 보기</a></li>
+						<li><a class="nav-link" href="about.html">팀소개</a></li>
+						<li class="nav-item active"><a class="nav-link" href="signup.html">회원가입</a></li>
+						<li><a class="nav-link" href="login.html">로그인</a></li>
+					</ul> -->
+
+					<!-- <ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
+						<li><a class="nav-link" href="mypage.html"><img src="images/user.svg"></a></li>
+						<li><a class="nav-link" href="cart.html"><img src="images/cart.svg"></a></li>
+					</ul> -->
+				</div>
+			</div>
+				
+		</nav>
+		<!-- End Header/Navigation -->
+     <header>
+      <h1>관리자 페이지 - 상품 조회</h1>
+    </header>
+    
+    <!-- <nav>
+      <a href="adminPList.html">상품 조회</a>
+      <a href="adminSales.html">매출 조회</a>
+      <a href="adminPInsert.html">상품 등록</a>
+    </nav> -->
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="adminplist.html">상품 조회</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="adminsales.html">매출 조회</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="adminpinsert.html">상품 등록</a>
+      </li>
+      <li class="nav-item ms-auto">
+          <a class="nav-link" href="adminplist.html">사진형</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="adminplist_text.html">목록형</a>
+        </li>
+    </ul>
+    <div class="untree_co-section product-section before-footer-section">
+		    <div class="container">
+		      	<div class="row">
+              <!-- Start Column 1 -->
+              <div class="col-12 col-md-4 col-lg-3 mb-5">
+                <a class="product-item" href="adminpupdate.html">
+                  <img src="images/product-3.png" class="img-fluid product-thumbnail">
+                  <h3 class="product-title">Nordic Chair</h3>
+                  <strong class="product-price">$50.00</strong>
+
+                  <span class="icon-cross">
+                    <img src="images/cross.svg" class="img-fluid">
+                  </span>
+                </a>
+              </div> 
+              <!-- End Column 1 -->
+						
+              <!-- Start Column 2 -->
+              <div class="col-12 col-md-4 col-lg-3 mb-5">
+                <a class="product-item" href="adminpupdate.html">
+                  <img src="images/product-1.png" class="img-fluid product-thumbnail">
+                  <h3 class="product-title">Nordic Chair</h3>
+                  <strong class="product-price">$50.00</strong>
+
+                  <span class="icon-cross">
+                    <img src="images/cross.svg" class="img-fluid">
+                  </span>
+                </a>
+              </div> 
+              <!-- End Column 2 -->
+
+              <!-- Start Column 3 -->
+              <div class="col-12 col-md-4 col-lg-3 mb-5">
+                <a class="product-item" href="adminpupdate.html">
+                  <img src="images/product-2.png" class="img-fluid product-thumbnail">
+                  <h3 class="product-title">Kruzo Aero Chair</h3>
+                  <strong class="product-price">$78.00</strong>
+
+                  <span class="icon-cross">
+                    <img src="images/cross.svg" class="img-fluid">
+                  </span>
+                </a>
+              </div>
+              <!-- End Column 3 -->
+
+              <!-- Start Column 4 -->
+              <div class="col-12 col-md-4 col-lg-3 mb-5">
+                <a class="product-item" href="adminpupdate.html">
+                  <img src="images/product-3.png" class="img-fluid product-thumbnail">
+                  <h3 class="product-title">Ergonomic Chair</h3>
+                  <strong class="product-price">$43.00</strong>
+
+                  <span class="icon-cross">
+                    <img src="images/cross.svg" class="img-fluid">
+                  </span>
+                </a>
+              </div>
+              <!-- End Column 4 -->
+
+              <!-- Start Column 1 -->
+              <div class="col-12 col-md-4 col-lg-3 mb-5">
+                <a class="product-item" href="#">
+                  <img src="images/product-3.png" class="img-fluid product-thumbnail">
+                  <h3 class="product-title">Nordic Chair</h3>
+                  <strong class="product-price">$50.00</strong>
+
+                  <span class="icon-cross">
+                    <img src="images/cross.svg" class="img-fluid">
+                  </span>
+                </a>
+              </div> 
+              <!-- End Column 1 -->
+                
+              <!-- Start Column 2 -->
+              <div class="col-12 col-md-4 col-lg-3 mb-5">
+                <a class="product-item" href="#">
+                  <img src="images/product-1.png" class="img-fluid product-thumbnail">
+                  <h3 class="product-title">Nordic Chair</h3>
+                  <strong class="product-price">$50.00</strong>
+
+                  <span class="icon-cross">
+                    <img src="images/cross.svg" class="img-fluid">
+                  </span>
+                </a>
+              </div> 
+              <!-- End Column 2 -->
+
+              <!-- Start Column 3 -->
+              <div class="col-12 col-md-4 col-lg-3 mb-5">
+                <a class="product-item" href="#">
+                  <img src="images/product-2.png" class="img-fluid product-thumbnail">
+                  <h3 class="product-title">Kruzo Aero Chair</h3>
+                  <strong class="product-price">$78.00</strong>
+
+                  <span class="icon-cross">
+                    <img src="images/cross.svg" class="img-fluid">
+                  </span>
+                </a>
+              </div>
+              <!-- End Column 3 -->
+
+              <!-- Start Column 4 -->
+              <div class="col-12 col-md-4 col-lg-3 mb-5">
+                <a class="product-item" href="#">
+                  <img src="images/product-3.png" class="img-fluid product-thumbnail">
+                  <h3 class="product-title">Ergonomic Chair</h3>
+                  <strong class="product-price">$43.00</strong>
+
+                  <span class="icon-cross">
+                    <img src="images/cross.svg" class="img-fluid">
+                  </span>
+                </a>
+              </div>
+              <!-- End Column 4 -->
+				  </div>
+		    </div>
+		</div>
+  </body>
+</html>

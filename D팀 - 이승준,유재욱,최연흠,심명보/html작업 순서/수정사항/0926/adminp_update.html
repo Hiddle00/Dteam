@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Untree.co">
+    <link rel="shortcut icon" href="favicon.png">
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="bootstrap, bootstrap4" />
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="css/tiny-slider.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>관리자페이지 - 상품목록 </title>
+    <style>
+      header {
+        background-color: #3b5d50;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+      input, select, button, textarea {
+        margin: 10px 0;
+        padding: 10px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Start Header/Navigation -->
+		<nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
+
+			<div class="container">
+				<a class="navbar-brand" href="index.html">The Monday<span>.</span></a>
+
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<!-- <div class="collapse navbar-collapse" id="navbarsFurni">
+					<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+						<li>
+							<a class="nav-link" href="index.html">메인 홈</a>
+						</li>
+						<li ><a class="nav-link" href="shop.html">상품 보기</a></li>
+						<li><a class="nav-link" href="about.html">팀소개</a></li>
+						<li class="nav-item active"><a class="nav-link" href="signup.html">회원가입</a></li>
+						<li><a class="nav-link" href="login.html">로그인</a></li>
+					</ul> -->
+
+					<!-- <ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
+						<li><a class="nav-link" href="mypage.html"><img src="images/user.svg"></a></li>
+						<li><a class="nav-link" href="cart.html"><img src="images/cart.svg"></a></li>
+					</ul> 
+				</div>-->
+			</div>
+				
+		</nav>
+		<!-- End Header/Navigation -->
+    <header>
+      <h1>관리자 페이지</h1>
+    </header>
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link" aria-current="page" href="adminplist.html">상품 조회</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="adminsales.html">매출 조회</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link  " href="adminpinsert.html">상품 등록</a>
+      </li>
+    </ul>
+
+    <div class="untree_co-section before-footer-section">
+      <div class="container">
+        <div class="row pb-5">
+          <section class="col-md-12" id="product-edit">
+          <h2 class="h3 mb-3 text-black">상품 수정</h2>
+          <div class="p-3 p-lg-5 border bg-white">
+          <form>
+            <input type="text" placeholder="수정할 상품 ID" required>
+            <input type="text" placeholder="새 상품명">
+            <input type="number" placeholder="새 가격">
+            <input type="text" placeholder="새 카테고리">
+            <textarea placeholder="상품설명"></textarea>
+            <button class="btn-edit" type="submit">수정하기</button>
+          </form>
+          </div>
+        </section>
+        </div>
+
+        <div class="row">
+        <section class="col-md-12" id="product-delete">
+          <h2 class="h3 mb-3 text-black">상품 삭제</h2>
+          <div class="p-3 p-lg-5 border bg-white">
+          <form>
+            <input type="text" placeholder="삭제할 상품 ID" required>
+            <button class="btn-danger" type="submit">삭제하기</button>
+          </form>
+          </div>
+        </section>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
