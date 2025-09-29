@@ -23,48 +23,72 @@
     </style>
   </head>
   <body>
+
     <!-- Start Header/Navigation -->
-    <nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">The Monday<span>.</span></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+		<nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
+			<div class="container">
+				<a class="navbar-brand" href="index.html">The Monday<span>.</span></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
 
-        <div class="collapse navbar-collapse" id="navbarsFurni">
-          <ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
-            <li><a class="nav-link" href="index.html">메인 홈</a></li>
-            <li><a class="nav-link" href="shop.html">상품 보기</a></li>
-            <li><a class="nav-link" href="about.html">팀소개</a></li>
-            <li><a class="nav-link" href="signup.html">회원가입</a></li>
-            <li><a class="nav-link" href="login.html">로그인</a></li>
-          </ul>
+				<div class="collapse navbar-collapse" id="navbarsFurni">
+					<div class="col-1"></div>
+					<form class="search-box">
+						<input class="form-control" type="search" placeholder="Search" aria-label="Search">
+						<button class="btn" type="submit">
+						<i class="fas fa-search"></i>
+						</button>
+					</form>
+          
+					<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+						<li class="active" aria-current="page" >
+							<a class="nav-link" href="mypage.html">[홍길동]님</a>
+						</li>
+						<li><a class="nav-link" href="shop.html">상품 보기</a></li>
+						<li><a class="nav-link" href="login.html">로그인</a></li>
+						<li><a class="nav-link" href="cart.html">장바구니</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 
-          <ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
-            <li><a class="nav-link" href="mypage.html"><img src="images/user.svg"></a></li>
-            <li><a class="nav-link" href="cart.html"><img src="images/cart.svg"></a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- End Header/Navigation -->
-
-    <!-- Hero -->
-    <div class="hero">
-      <div class="container">
-        <div class="row justify-content-between">
-          <div class="col-lg-5">
-            <div class="intro-excerpt">
-              <h1>마이페이지</h1>
-            </div>
-          </div>
-          <div class="row">
-						<div class="col-lg-7" style="color: #3b5d50;">.</div>
+		<!-- Start Hero -->
+		<div class="hero" style="padding-bottom: 0px;">
+			<div class="container">
+				<div class="row justify-content-between">
+					<div class="col-lg-5">
+						<div class="intro-excerpt">
+						</div>
 					</div>
-        </div>
-      </div>
-    </div>
-    <!-- End Hero -->
+				</div>
+			</div>
+
+			<!-- Start navtap Section -->
+			<div class="row bg-dark" style="border: none;">
+				<div class="col-2"></div>
+				<ul class="col-8 nav nav-tabs bg-dark">
+				<li class="nav-item">
+					<a class="nav-link" href="shop?kind={ kind }.html">침대</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="shop?kind=/.html">소파</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="shop?kind=/.html">옷장</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="shop?kind=/.html">매트리스</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="shop?kind=/.html">다이닝</a>
+				</li>
+					<div class="col-2"></div>
+			</div>
+			<!-- End navtap Section -->
+		</div>
+		<!-- End Hero -->
+
     <!-- 회원정보 -->
     <div class="container mypage">
       <h2>회원 정보</h2>
@@ -91,55 +115,103 @@
       </table>
       
     </div>
-
-    <!-- 비밀번호 변경 -->
-    <div class="container mypage">
-      <h2>비밀번호 변경</h2>
-      <div class="form-group mb-3">
-        <label for="pw" class="text-black">기존 비밀번호</label>
-        <input type="password" class="form-control">
-        <button type="button" class="btn btn-primary btn-sm" onclick="pw_check()">비밀번호 확인</button>
-      </div>
-      
-      <div class="form-group mb-3">
-        <label for="newpw" class="text-black">새 비밀번호</label>
-        <input type="password" class="form-control" id="newpw" name="newpw">
-      </div>
-      <div class="form-group mb-3">
-        <label for="newpw_check" class="text-black">새 비밀번호 확인</label>
-        <input type="password" class="form-control" id="newpw_check" name="newpw_check">
-      </div>
-      <button type="button" class="btn btn-primary btn-sm" onclick="update_pw()">비밀번호 변경하기</button>
-    </div>
-
     <!-- 주문내역 -->
-    <div class="container mypage">
+    <div class="container mypage mb-5">
       <h2>최근 주문 내역</h2>
       <table class="table table-secondary table-striped-columns">
         <thead class="table-dark">
           <tr>
             <th>주문번호</th>
             <th>상품명</th>
-            <th>주문일자</th>
             <th>금액</th>
+            <th>수량</th>
+            <th>총금액</th>
+            <th>주문일자</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>20230922001</td>
             <td>원목 식탁 세트</td>
-            <td>2023-09-20</td>
+            <td>150,000</td>
+            <td>3 개</td>
             <td>450,000원</td>
+            <td>2025-09-29</td>
           </tr>
           <tr>
             <td>20230921012</td>
             <td>소파 3인용</td>
-            <td>2023-09-18</td>
+            <td>205,000</td>
+            <td>4 개</td>
             <td>820,000원</td>
+            <td>2025-09-29</td>
           </tr>
         </tbody>
       </table>
       <button type="button" class="btn btn-sm" style="background-color: red; border: none;">회원 탈퇴</button>
     </div>
+
+    <!-- Start Footer Section -->
+		<footer class="footer-section">
+			<!-- Start navtap Section -->
+			<div class="row bg-dark">
+				<div class="col-2"></div>
+				<div class="col-10" style="border: none;">
+					<ul class="nav nav-tabs bg-dark">
+						<li class="nav-item">
+							<a class="nav-link" href="about.html">팀 소개</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="board.html">문의하기</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- End navtap Section -->
+			<div class="container relative">
+				<div class="row mb-1">
+					<div class="col-lg-2"></div>
+					<div class="col-lg-2">
+						<div class="row links-wrap">
+							<div class="mt-3 footer-logo-wrap">
+								<a href="#" class="footer-logo">The Monday<span>.</span></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-8">
+						<div class="row links-wrap">
+							<div class="col-8">
+								<p class="">상호명 : 이젠 가구  /  대표 : 이승준  /  전화 : 1111-1111  /  팩스 : 063-111-1111 <br> 주소 : 전북 전주시 덕진구  /  사업자등록번호 : 000-00-00000<br>통신판매업신고 : 2025-ㅁㅁㅁㅁ-1111  / 메일 : ezenDteam@gmail.com</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-2"></div>
+					<div class="col-lg-4">
+						<ul class="list-unstyled custom-social">
+								<li><a href="#"><span class="fa fa-brands fa-facebook-f"></span></a></li>
+								<li><a href="#"><span class="fa fa-brands fa-twitter"></span></a></li>
+								<li><a href="#"><span class="fa fa-brands fa-instagram"></span></a></li>
+								<li><a href="#"><span class="fa fa-brands fa-linkedin"></span></a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="copyright">
+					<div class="row ">
+						<div class="col-lg-2"></div>
+						<div class="col-lg-6">
+							<p class="mb-2 text-center text-lg-start">&copy;
+								<script>document.write(new Date().getFullYear());</script>. 
+								 이젠 가구 Co. all rights reserved.
+								<!-- License information: https://untree.co/license/ -->
+            				</p>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</footer>
+		<!-- End Footer Section -->	
+
   </body>
 </html>
