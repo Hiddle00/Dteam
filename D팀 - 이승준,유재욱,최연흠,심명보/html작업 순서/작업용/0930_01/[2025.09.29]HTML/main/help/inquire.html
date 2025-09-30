@@ -11,16 +11,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="author" content="Untree.co">
-    <link rel="shortcut icon" href="favicon.png">
+    <link rel="shortcut icon" href="../favicon.png">
 
     <meta name="description" content="" />
     <meta name="keywords" content="bootstrap, bootstrap4" />
 
     <!-- Bootstrap CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link href="css/tiny-slider.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="../../css/tiny-slider.css" rel="stylesheet">
+    <link href="../../css/style.css" rel="stylesheet">
     <title>문의 페이지</title> 
   </head>
   <body>
@@ -28,7 +28,7 @@
     <!-- Start Header/Navigation -->
 	<nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
 		<div class="container">
-			<a class="navbar-brand" href="index.html">The Monday<span>.</span></a>
+			<a class="navbar-brand" href="../index.html">The Monday<span>.</span></a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -43,11 +43,11 @@
 				</form>
 		
 				<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
-					<li><a class="nav-link" href="mypage.html">[홍길동]님</a></li>
-					<li><a class="nav-link" href="shop.html">상품 보기</a></li>
-					<li><a class="nav-link" href="login.html">로그인</a></li>
-					<li><a class="nav-link" href="cart.html">장바구니</a></li>
-				</ul>
+                    <li><a class="nav-link" href="../member/mypage.html">[홍길동]님</a></li>
+                    <li><a class="nav-link" href="../shop/main.html">상품 보기</a></li>
+                    <li><a class="nav-link" href="../login.html">로그인</a></li>
+                    <li><a class="nav-link" href="../member/cart.html">장바구니</a></li>
+                </ul>
 			</div>
 		</div>
 	</nav>
@@ -68,19 +68,19 @@
 			<div class="col-2"></div>
 			<ul class="col-8 nav nav-tabs bg-dark">
 			<li class="nav-item">
-				<a class="nav-link" href="shop?kind={ kind }.html">침대</a>
+				<a class="nav-link" href="../shop/main?kind={ kind }.html">침대</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="shop?kind=/.html">소파</a>
+				<a class="nav-link" href="../shop/main?kind={ kind }.html">소파</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="shop?kind=/.html">옷장</a>
+				<a class="nav-link" href="../shop/main?kind={ kind }.html">옷장</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="shop?kind=/.html">매트리스</a>
+				<a class="nav-link" href="../shop/main?kind={ kind }.html">매트리스</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="shop?kind=/.html">다이닝</a>
+				<a class="nav-link" href="../shop/main?kind={ kind }.html">다이닝</a>
 			</li>
 				<div class="col-2"></div>
 		</div>
@@ -121,7 +121,7 @@
           <div class="input-group-lg">
             <textarea class="form-control" aria-label="With textarea" placeholder="자세한 내용을 입력해주세요."></textarea>
           </div>
-          <button type="button" class="btn btn-primary btn-sm m-3" onclick="window.location = 'mypage_update.html'">문의 보내기</button>
+          <button type="button" class="btn btn-primary btn-sm m-3" onclick="window.location = '../member/mypage_update.html'">문의 보내기</button>
         </form>
         </div>
         </section>
@@ -137,14 +137,11 @@
 			<div class="col-10" style="border: none;">
 				<ul class="nav nav-tabs bg-dark">
 					<li class="nav-item">
-						<a class="nav-link" href="about.html">팀 소개</a>
+						<a class="nav-link" href="../about.html">팀 소개</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="board.html">고객센터</a>
+						<a class="nav-link active" aria-current="page" href="./board.html">고객센터</a>
 					</li>
-					<li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="inquire.html">문의하기</a>
-                    </li>
 				</ul>
 			</div>
 		</div>
